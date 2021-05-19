@@ -1,12 +1,11 @@
-import React from 'react'
+import React ,{useState} from 'react'
 
-function Selection(props) {
-
+function Selection(applyColor) {
+    const [background,selectNextBackground] = useState({background:""})
+    
     return (
-        <div>
-            <select onChange={props.applyColor}>
-                <option></option>
-            </select>
+        <div className="fix-box" style={background} onClick={()=>applyColor}>
+            <h2 className="subheading">Selection</h2> 
         </div>
     )
 }
