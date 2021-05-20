@@ -29,7 +29,6 @@ const App = () => {
     updateSelectionStyle(nextBackground)
   }
   
-   
   return (
     <div id="master">
       <h5 className="heading">{title}</h5>
